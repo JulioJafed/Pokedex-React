@@ -1,0 +1,24 @@
+/* para poder usar un css aparte
+se necesita hacer una carpeta con nombre.d.ts 
+y escribir el código
+    declare module "*module.css"{
+    const classes:{[key: string]: string};
+    export default classes; 
+}*/
+.header{
+ display: grid;
+ font-size: 1.2rem;
+ font-weight: bold;
+ padding: 10px;
+ place-items: center;
+background: var(--bg-gradient); /*color agregado en App.css .root*/
+}
+
+input{
+    background-color: rgb(121, 121, 121,0.267);
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin: 10px 10px;
+    border: none;
+    width: 80vw;
+}
